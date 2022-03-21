@@ -6,4 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.bin.luo.mysample.MainActivity">
+
+        <GridLayout
+            android:id="@+id/myGridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4"
+            android:rowCount="6">
+            <!-- 定义一个横跨4列的文本框 -->
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_columnSpan="4"
+                android:layout_marginLeft="2pt"
+                android:layout_marginRight="2pt"
+                android:background="#fff"
+                android:padding="3pt"
+                android:text="12+56=68"
+                android:textColor="#000"
+                android:textSize="48dp" />
+            <!-- 定义一个横跨4列的按钮 -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_columnSpan="4"
+                android:text="清除"
+                android:textSize="28dp" />
+        </GridLayout>
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
