@@ -6,4 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.bin.luo.mysample.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TabHost
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- 定义第一个选项卡的内容 -->
+                <LinearLayout
+                    android:id="@+id/tab01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#121212">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="50dp"
+                        android:src="@mipmap/myimage1" />
+                </LinearLayout>
+                <!-- 定义第二个选项卡的内容 -->
+                <LinearLayout
+                    android:id="@+id/tab02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#121212">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="50dp"
+                        android:src="@mipmap/myimage2" />
+                </LinearLayout>
+                <!-- 定义第三个选项卡的内容 -->
+                <LinearLayout
+                    android:id="@+id/tab03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#121212">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="50dp"
+                        android:src="@mipmap/myimage3" />
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
